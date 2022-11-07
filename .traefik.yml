@@ -1,0 +1,12 @@
+displayName: Auth0 authenticator
+type: middleware
+import: github.com/gigapipehq/traefik-auth0-middleware
+summary: Authorization middleware for verifying Auth0 JWT's and injecting decoded payload into the request header
+iconPath: gigapipe.png
+testData:
+  auth0Domain: auth0.com
+  auth0Audience: auth0_authience
+  proxyHeaderName: X-Auth0-User
+  proxyHeaderValueAsJSON: true
+  extractKeys:
+    - user
